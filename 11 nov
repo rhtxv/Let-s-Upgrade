@@ -1,0 +1,9 @@
+Study on binary search tree
+
+A Binary Search Tree or BST as it is popularly called is a binary tree that fulfills the following conditions:
+
+The nodes that are lesser than the root node which is placed as left children of the BST.
+The nodes that are greater than the root node that is placed as the right children of the BST.
+The left and right subtrees are in turn the binary search trees.
+This arrangement of ordering the keys in a particular sequence facilitates the programmer to carry out operations like searching, inserting, deleting, etc.
+If the nodes are not ordered, then we might have to compare each and every node before we can get the operation result.
