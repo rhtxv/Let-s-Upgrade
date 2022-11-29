@@ -1,0 +1,12 @@
+find time complexity for
+
+
+check()
+
+{
+
+for(i=n;i>1;i=i/2)
+
+cout<<"letsupgrade";
+
+ans o(n^2)
