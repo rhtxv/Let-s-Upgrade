@@ -1,0 +1,26 @@
+Implement add at beginning function in any IDE
+
+
+#include <iostream>
+#include <iterator>
+#include <map>
+using namespace std;
+int main()
+{
+map<int, int> class10; //map declaration of key-value pair of int-int type
+class10.insert(pair<int, int>(1, 65));
+class10.insert(pair<int, int>(2, 78));
+class10.insert(pair<int, int>(3, 60));
+class10.insert(pair<int, int>(4, 50));
+class10.insert(pair<int, int>(5, 90));
+class10.insert(pair<int, int>(6, 80));
+class10.insert(pair<int, int>(7, 75));
+map<int, int>::iterator itr;  // iterator of int-int  type
+cout << "\nThe map of percentages of students of  class10 is : \n";
+cout << "\tRoll_no  \t Percentage\n";
+for (itr = class10.begin(); itr != class10.end(); ++itr) {
+cout << '\t' << itr->first
+<< '\t' << itr->second << '\n';
+}
+cout << endl;
+return 0;
