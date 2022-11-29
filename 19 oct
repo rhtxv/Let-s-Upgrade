@@ -1,0 +1,75 @@
+WAP to find the highest score among 10 players
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int studentcount, students, score;
+    float totalscores, average;
+    string studentname;
+    
+    //tottal score 200 to 99
+    cout<<"enter score"<<endl;
+    cin>> students;
+    
+    totalscores=0.0;
+    studentcount=0;
+    
+    while(students>studentcount)
+    {
+        
+        cout<<"Please enter scores: ";
+        cin>> score;
+        cout<<studentname<< " got a score of "<<score<<endl;
+        
+        if(score<200 && score>189)
+        {
+            cout<<studentname<<"'a score highest."<<endl;;
+        }
+        else if(score<190 && score>179)
+        {
+            cout<<studentname<<"'b score high."<<endl;
+        }
+        else if(score<180 && score>169)
+        {
+            cout<<studentname<< "'c score high."<<endl;
+        }
+        else if(score<170 && score>159)
+        {
+            cout<<studentname<<" d score high."<<endl;
+        }
+        else if(score<160 && score>149)
+        {
+            cout<<studentname<<" e score high."<<endl;
+        }
+        else if(score<150 && score>139)
+        {
+            cout<<studentname<<" f score high."<<endl;
+        }
+        else if(score<140 && score>129)
+        {
+            cout<<studentname<<" g score high."<<endl;
+        }
+        else if(score<130 && score>119)
+        {
+            cout<<studentname<<" h score high."<<endl;
+        }
+        else if(score<120 && score>109)
+        {
+            cout<<studentname<<" i score high."<<endl;
+        }
+        else if(score<110 && score>99)
+        {
+            cout<<studentname<<" j score high."<<endl;
+        }
+        
+        
+        studentcount=studentcount+1;
+        totalscores=totalscores+score;
+    }
+    
+
+    return 0;
+}  
