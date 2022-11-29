@@ -1,0 +1,26 @@
+Programmers can dynamically allocate storage space while the program is running. Still, programmers cannot create new variable names "on the fly", and for this reason, dynamic allocation requires two criteria:
+
+Creating the dynamic space in memory
+Storing its address in a pointer (so that space can be accessed)
+Memory de-allocation is also a part of this concept where the "clean-up" of space is done for variables or other data storage. It is the job of the programmer to de-allocate dynamically created space. For de-allocating dynamic memory, we use the delete operator. In other words, dynamic memory Allocation refers to manually performing memory management for dynamic memory allocation.
+
+Memory in the C++ program is divided into two parts:
+
+Stack: All variables declared inside any function take up the stack's memory.
+Heap: It is the unused memory of the program and can be used to allocate the memory at runtime dynamically.
+
+
+Here's a simple program showing the concept of dynamic memory allocation:
+
+
+#include <iostream>
+using namespace std; 
+
+int main()
+{
+    double* val = NULL;
+    val = new double;
+    *val = 38184.26;
+    cout << "Value is : " << *val << endl;
+    delete val;
+}
