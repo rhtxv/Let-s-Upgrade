@@ -1,0 +1,17 @@
+Find the minimum element in an array
+
+#include<iostream>
+using namespace std;
+int main() {
+   int n, i, minimum, a[10] = {1, 8 7, 9, 10, 14, 16, 19, 24, 26};
+   char ch;
+   minimum = a[0];
+   cout<<"element of array:";
+   for(i = 0; i < 10; i++) {
+      cout<<" "<<a[i];
+      if(minimum > a[i])
+         minimum= a[i];
+   }
+   cout<<"Minimum  elements of array: "<<minimum;
+   return 0;
+}
