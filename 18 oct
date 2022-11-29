@@ -1,0 +1,39 @@
+Given 3 values x,y,z, write a program to circularly shift their values to the right
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int arr[5],i;
+  cout<<"elements of array: ";
+  for(i=0;i<5;i++)
+  cin>>arr[i];
+   cout<<"Your array: ";
+  for(i=0;i<5;i++)
+  cout<<arr[i]<<"  ";
+  
+  i=4;
+  int j=i-1;
+  int temp=arr[4];
+    while(j>=0 && i>=0)
+    {
+      arr[i]=arr[j];
+      j--;
+      i--;
+          }
+  arr[i]=temp;
+  cout<<"Shifted array: ";
+  for(i=0;i<5;i++)
+  cout<<arr[i]<<"  ";
+  
+  return 0;
+}
+
+Enter elements of aaray: 10
+20
+30
+40
+50
+my array: 10 20 30 40 50
+Shifted array: 50 10 20 30 40
